@@ -1,0 +1,255 @@
+/* Style for the text input box */
+.stTextArea textarea {
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #f5f7fa;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+.stTextArea textarea:hover {
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.1);
+}
+
+/* Style for the Analyze button */
+.stButton button {
+    width: auto;
+}
+
+.stButton.analyze-button button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stButton.analyze-button button:hover {
+    background-color: #45a049;
+    box-shadow: 0px 6px 8px rgba(0,0,0,0.15);
+}
+
+.subtle-button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.subtle-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Dividers and section transitions */
+.divider {
+    border-bottom: 2px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Space between input area and button */
+.stTextArea, .stButton {
+    margin-bottom: 20px;
+}
+
+/* Reduced space between sentence title and sentences */
+.sentence-section-title {
+    font-size: 12px;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+/* Style for each sentence card */
+.sentence-card {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Style for the sentiment bar section */
+.sentence-bar {
+    width: 180px;
+}
+
+/* Subtle divider between sections */
+.section-divider {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Emotion label styling for Sentence-Level Analysis */
+.emotion-label {
+    font-size: 14px;
+    color: #FFC83D;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.emotion-emoji {
+    margin-left: 5px;
+}
+
+/* Remove default Streamlit button styling */
+.stButton > button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
+/* Custom modern button style */
+.modern-button {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.modern-button:hover {
+    color: #333;
+    transform: translateY(-1px);
+}
+
+.modern-button .icon {
+    margin-right: 4px;
+    font-size: 16px;
+}
+
+/* Container styling */
+.input-container {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+/* Hide Streamlit elements we don't want */
+div[data-testid="stToolbar"] {
+    display: none;
+}
+
+/* Emoji explanation styling */
+.emoji-explanation {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    color: #333;
+    margin-bottom: 0px;
+}
+
+.emoji-explanation span {
+    color: #FFC83D;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+/* Emotions container and items */
+.emotions-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.emotion-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.emotion-item-1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.emotion-item-2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.emotion-item-3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Sentence-level analysis styling */
+.sentence-text {
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-bottom: 8px;
+}
+
+.sentence-info {
+    font-size: 14px; 
+    font-weight: normal;
+}
+
+.positive-sentiment {
+    color: green;
+    font-weight: bold;
+}
+
+.negative-sentiment {
+    color: red;
+    font-weight: bold;
+}
+
+.neutral-sentiment {
+    color: gray;
+    font-weight: bold;
+}
+
+/* Highlighted text styling */
+.highlighted-text {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    font-size: 18px;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-in-out;
+    transition: all 0.5s ease;
+}
+
